@@ -489,11 +489,13 @@ function ExercisesIllustration() {
   )
 }
 
+const ASSET_BASE = import.meta.env.BASE_URL ?? '/'
+
 const projectVideos = [
   {
     id: 'requirements',
     title: 'Project 1 – Requirements & Specifications',
-    file: '/videos/requirements.mp4',
+    file: `${ASSET_BASE}videos/requirements.mp4`,
     duration: '~5 min',
     description:
       'Follow a real example of gathering information from a customer, capturing process details and safety constraints, and turning this into a structured automation brief.',
@@ -501,7 +503,7 @@ const projectVideos = [
   {
     id: 'io-architecture',
     title: 'Project 2 – I/O List & Control Architecture',
-    file: '/videos/io-architecture.mp4',
+    file: `${ASSET_BASE}videos/io-architecture.mp4`,
     duration: '~6 min',
     description:
       'See how to transform requirements into a complete I/O list, choose PLC hardware and design a robust control architecture for a small automation cell.',
@@ -509,7 +511,7 @@ const projectVideos = [
   {
     id: 'plc-hmi',
     title: 'Project 3 – PLC Program & HMI/SCADA',
-    file: '/videos/plc-hmi.mp4',
+    file: `${ASSET_BASE}videos/plc-hmi.mp4`,
     duration: '~7 min',
     description:
       'Watch a full walkthrough of implementing PLC logic, structuring code into reusable blocks, and building HMI and SCADA screens that match the project requirements.',
@@ -517,7 +519,7 @@ const projectVideos = [
   {
     id: 'testing-commissioning',
     title: 'Project 4 – Testing, Commissioning & Maintenance',
-    file: '/videos/testing-commissioning.mp4',
+    file: `${ASSET_BASE}videos/testing-commissioning.mp4`,
     duration: '~6 min',
     description:
       'Follow the complete testing and commissioning sequence, from offline simulation to on-site startup, and see how to set up diagnostics and KPIs for long-term reliability.',
@@ -1188,7 +1190,7 @@ function LibraryPage() {
                 <li>
                   <span>Industrial Automation Fundamentals – Electrical Basics and Components (PDF)</span>
                   <a
-                    href="/Stage 1 - Industrial_Automation_Electrical_Basics.pdf"
+                    href={`${ASSET_BASE}Stage 1 - Industrial_Automation_Electrical_Basics.pdf`}
                     className="btn btn-small btn-outline library-download"
                     download
                   >
@@ -1198,7 +1200,7 @@ function LibraryPage() {
                 <li>
                   <span>PLC Automation Fundamentals – Hardware, Programming and Troubleshooting (PDF)</span>
                   <a
-                    href="/Stage 2 - PLC_Automation_Fundamentals.pdf"
+                    href={`${ASSET_BASE}Stage 2 - PLC_Automation_Fundamentals.pdf`}
                     className="btn btn-small btn-outline library-download"
                     download
                   >
@@ -1208,7 +1210,7 @@ function LibraryPage() {
                 <li>
                   <span>PLC Roadmap – From Beginner to Pro (PDF)</span>
                   <a
-                    href="/PLC_Roadmap_Beginner_to_Pro.pdf"
+                    href={`${ASSET_BASE}PLC_Roadmap_Beginner_to_Pro.pdf`}
                     className="btn btn-small btn-outline library-download"
                     download
                   >
@@ -1226,7 +1228,7 @@ function LibraryPage() {
                 <li>
                   <span>HMI, PLC and SCADA Fundamentals for Industrial Automation (PDF)</span>
                   <a
-                    href="/Stage 3 - HMI_PLC_SCADA_Fundamentals.pdf"
+                    href={`${ASSET_BASE}Stage 3 - HMI_PLC_SCADA_Fundamentals.pdf`}
                     className="btn btn-small btn-outline library-download"
                     download
                   >
@@ -1236,7 +1238,7 @@ function LibraryPage() {
                 <li>
                   <span>Industrial Communication Systems for Automation (PDF)</span>
                   <a
-                    href="/Stage 4 - Industrial_Communication_Fieldbus_Ethernet.pdf"
+                    href={`${ASSET_BASE}Stage 4 - Industrial_Communication_Fieldbus_Ethernet.pdf`}
                     className="btn btn-small btn-outline library-download"
                     download
                   >
@@ -1255,7 +1257,7 @@ function LibraryPage() {
                 <li>
                   <span>Advanced Automation Fundamentals: Motion Control, PID and Cybersecurity (PDF)</span>
                   <a
-                    href="/Stage 5 - Motion_Control_PID_Programming_Cybersecurity.pdf"
+                    href={`${ASSET_BASE}Stage 5 - Motion_Control_PID_Programming_Cybersecurity.pdf`}
                     className="btn btn-small btn-outline library-download"
                     download
                   >
@@ -1292,6 +1294,10 @@ function LibraryPage() {
 }
 
 function ProjectsPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
   return (
     <Layout>
       <section className="section">
