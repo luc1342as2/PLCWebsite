@@ -1,16 +1,16 @@
-# React + Vite
+🚀 PLCWebsite — A Dynamic Hub for Programmable Logic Controller Learning & Reference
+This repository isn’t just another static codebase — it’s a hands-on learning platform built with modern web tech (React + Vite) that bridges the gap between curious learners and the world of Industrial Automation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Imagine a space where beginners can explore step-by-step guides, reference materials, and structured stages that take you from electrical basics all the way to advanced topics like motion control and cybersecurity for PLCs. That’s exactly what this project aims to be — an interactive roadmap to mastering PLCs.
 
-Currently, two official plugins are available:
+🎯 Highlights:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📘 Structured learning PDF resources from beginner to pro-level automation topics
 
-## React Compiler
+⚙️ Built using React and Vite for a fast, responsive experience
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌐 Designed as an educational site to teach and guide newcomers into automation and control systems
 
-## Expanding the ESLint configuration
+💡 Future-ready foundation for adding tutorials, interactive tools, or even simulations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Whether you’re exploring industrial automation theory, brushing up on PLC fundamentals, or looking to contribute to a community-centric learning project — PLCWebsite is your launchpad into the fascinating world of industrial control. 🔧⚡
