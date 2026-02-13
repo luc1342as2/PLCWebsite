@@ -700,8 +700,7 @@ function Layout({ children }) {
       <main className="app-main">{children}</main>
       <footer className="app-footer">
         <p>
-          Based on the PLC Programming Hub roadmap – Industrial Automation learning path. © 2023
-          All Rights Lucas Ghigli
+          Based on the PLC Programming Hub roadmap – Industrial Automation learning path. © 2025 Lucas Ghigli. All Rights Reserved.
         </p>
       </footer>
     </div>
